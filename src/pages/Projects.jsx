@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import ImageCarousel from "../components/ImageCarousel";
+import Loading from "../components/Loading";
 import '../assets/css/project.css';
 
 function Projects() {
@@ -22,7 +23,7 @@ function Projects() {
     }, []);
 
     if (error) return <p>{error}</p>;
-    if (!proj) return <p>Loading projects...</p>;
+    if (!proj) return <Loading />;
 
     return (
         <main>
