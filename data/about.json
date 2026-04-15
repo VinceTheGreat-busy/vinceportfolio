@@ -1,0 +1,96 @@
+{
+  "frontend": [
+    {
+      "name": "HTML 5",
+      "img": "/storage/about/HTML5.svg",
+      "rating": 4
+    },
+    {
+      "name": "CSS 3",
+      "img": "/storage/about/CSS3.svg",
+      "rating": 4
+    },
+    {
+      "name": "JavaScript",
+      "img": "/storage/about/JS.svg",
+      "rating": 4
+    },
+    {
+      "name": "React",
+      "img": "/storage/about/REACT.svg",
+      "rating": 5
+    }
+  ],
+
+  "backend": [
+    {
+      "name": "PHP",
+      "img": "/storage/about/PHP.svg",
+      "rating": 5
+    },
+    {
+      "name": "Laravel",
+      "img": "/storage/about/Laravel.svg",
+      "rating": 4
+    },
+    {
+      "name": "Node.js",
+      "img": "/storage/about/nodejs.svg",
+      "rating": 5
+    }
+  ],
+
+  "libraries": [
+    {
+      "name": "Bootstrap 5",
+      "img": "/storage/about/bootstrap5.svg",
+      "rating": 4
+    },
+    {
+      "name": "Tailwind CSS",
+      "img": "/storage/about/tailwindcss.svg",
+      "rating": 4
+    }
+  ],
+
+  "databases": [
+    {
+      "name": "MySQL",
+      "img": "/storage/about/mysql.svg",
+      "rating": 5
+    },
+    {
+      "name": "PostgreSQL",
+      "img": "/storage/about/pg.svg",
+      "rating": 5
+    },
+    {
+      "name": "MongoDB",
+      "img": "/storage/about/mongodb.svg",
+      "rating": 4
+    }
+  ],
+
+  "tools": [
+    {
+      "name": "Figma",
+      "img": "/storage/about/figma.svg",
+      "rating": 3
+    },
+    {
+      "name": "Visual Studio Code",
+      "img": "/storage/about/vsc.svg",
+      "rating": 5
+    },
+    {
+      "name": "Microsoft Excel",
+      "img": "/storage/about/mse.svg",
+      "rating": 5
+    },
+    {
+      "name": "Microsoft Word",
+      "img": "/storage/about/msw.svg",
+      "rating": 5
+    }
+  ]
+}
