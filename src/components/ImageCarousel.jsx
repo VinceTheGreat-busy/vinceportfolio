@@ -20,7 +20,7 @@ function ImageCarousel({ images, name }) {
             {images.map((img, i) => (
                 <img
                     key={i}
-                    src={img}
+                    src={`${import.meta.env.BASE_URL}${img}`}
                     alt={`${name} ${i}`}
                     className={`carousel-img ${i === index ? "active" : ""}`}
                 />
