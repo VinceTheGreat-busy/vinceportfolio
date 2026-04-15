@@ -1,0 +1,79 @@
+{
+  "projects": [
+    {
+      "category": "Enrollment System",
+      "items": [
+        {
+          "name": "Digital Enrollment System",
+          "description": "A web-based enrollment platform for managing student registration and academic records efficiently.",
+          "role": "Fullstack Developer",
+          "status": "Completed",
+          "year": "2025",
+          "technologies": ["PHP", "Laravel", "Node.js", "PostgreSQL", "Figma"],
+          "images": [
+            "/storage/projects/enrollment/DES1.png",
+            "/storage/projects/enrollment/DES2.png",
+            "/storage/projects/enrollment/DES3.png",
+            "/storage/projects/enrollment/DES4.png",
+            "/storage/projects/enrollment/DES5.png",
+            "/storage/projects/enrollment/DES6.png"
+          ],
+          "highlights": [
+            "Automated enrollment workflow",
+            "Admin dashboard with analytics",
+            "Responsive UI design"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Inventory System",
+      "items": [
+        {
+          "name": "Digital Inventory System",
+          "description": "System for tracking inventory levels, stock movement, and product management.",
+          "role": "Fullstack Developer",
+          "status": "Completed",
+          "year": "2025",
+          "technologies": ["React", "PHP", "Node.js", "MySQL", "Figma"],
+          "images": [
+            "/storage/projects/inventory/DIS1.png",
+            "/storage/projects/inventory/DIS2.png",
+            "/storage/projects/inventory/DIS3.png",
+            "/storage/projects/inventory/DIS4.png",
+            "/storage/projects/inventory/DIS5.png",
+            "/storage/projects/inventory/DIS6.png"
+          ],
+          "highlights": [
+            "Real-time stock updates",
+            "Role-based access control",
+            "Clean dashboard UI"
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Library System",
+      "items": [
+        {
+          "name": "Library Management System",
+          "description": "A system for managing book records, borrowing transactions, and library users.",
+          "role": "Fullstack Developer",
+          "status": "On Development",
+          "year": "2026",
+          "technologies": ["React", "PHP", "Node.js", "PostgreSQL", "Figma"],
+          "images": [
+            "/storage/projects/LMS1.png",
+            "/storage/projects/LMS2.png",
+            "/storage/projects/LMS3.png"
+          ],
+          "highlights": [
+            "Borrow/return tracking system",
+            "Search and filtering system",
+            "Admin management panel"
+          ]
+        }
+      ]
+    }
+  ]
+}

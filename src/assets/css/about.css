@@ -1,0 +1,138 @@
+.heading {
+  background: linear-gradient(135deg, var(--secondary), var(--primary));
+  padding: 20px;
+  border-radius: 12px;
+  margin: 10px 0;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  font-family: "Inter", sans-serif;
+}
+
+.heading h2 {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.description {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.description h2 {
+  border-bottom: 3px solid var(--secondary);
+  padding-bottom: 5px;
+  margin: 10px 0;
+  font-size: 1.8rem;
+}
+
+.educAttainment {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.educ-card {
+  background: var(--bg);
+  padding: 20px;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.educ-card h3 {
+  color: var(--primary);
+  margin-bottom: 5px;
+}
+
+.educ-card p {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+.educ-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tech-stack {
+  background: var(--surface);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+}
+
+#tech-container {
+  display: flex;
+  justify-content: space-around;
+  align-self: center;
+}
+
+.tech-stack h2 {
+  margin-bottom: 15px;
+  border-bottom: 3px solid var(--primary);
+  padding-bottom: 5px;
+}
+
+.tech-stack h3 {
+  margin: 15px 0 10px;
+  color: var(--secondary);
+  text-align: center;
+}
+
+.stack-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.stack-card {
+  background: var(--bg);
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  transition: all 0.25s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.stack-card img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.stack-card p {
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.stack-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.stars {
+  margin-top: 5px;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #facc15; /* gold */
+}
+
+@media (max-width: 748px) {
+  #tech-container {
+    display: flex;
+    justify-content: space-around;
+    align-self: flex-start;
+    flex-direction: column;
+  }
+
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+  }
+}

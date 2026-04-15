@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+}
+
+:root[data-theme="light"] {
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --heading: #ffffff;
+  --primary: #0ea5e9;
+  --secondary: #8b5cf6;
+  --text: #0f172a;
+  --muted: #64748b;
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--text);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.2s ease-in-out;
+}
+
+:root[data-theme="dark"] {
+  --bg: #0b0f14;
+  --surface: #111827;
+  --heading: #ffffff;
+  --primary: #38bdf8;
+  --secondary: #a78bfa;
+  --text: #e5e7eb;
+  --muted: #9ca3af;
+}
+
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}

@@ -1,0 +1,131 @@
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 12px 20px;
+  background: rgba(14, 165, 233, 0.85);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: min(1200px, 95%);
+}
+
+header nav h1 {
+  color: var(--heading);
+  font-size: 28px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+
+header nav ul li button {
+  color: var(--surface);
+  font-size: 16px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+header nav ul li button:hover {
+  background: var(--surface);
+  color: var(--primary);
+  transform: translateY(-2px);
+}
+
+header nav ul li button.active {
+  background: var(--surface);
+  color: var(--primary);
+  font-weight: 600;
+}
+
+header #theme-toggle {
+  background: var(--surface);
+  border: none;
+  color: var(--primary);
+  font-size: 1.2rem;
+  cursor: pointer;
+  position: fixed;
+  left: 20px;
+  top: 80px;
+  padding: 10px;
+  border-radius: 50%;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+header #theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg);
+}
+
+#mobile-menu {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #mobile-menu {
+    display: block;
+    color: var(--heading);
+    font-size: 1.6rem;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 6px 10px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+  }
+
+  #mobile-menu:hover {
+    background: var(--surface);
+    color: var(--primary);
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 70px;
+    right: -220px;
+    width: 200px;
+    height: calc(100dvh - 70px);
+    background: var(--primary);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    transition: right 0.3s ease;
+    border-left: 1px solid rgba(255, 255, 255, 0.05);
+  }
+
+  .nav-links.open {
+    right: 0;
+  }
+
+  .nav-links li button {
+    width: 100%;
+    text-align: left;
+    padding: 12px;
+    border-radius: 8px;
+    font-size: 16px;
+  }
+
+  .nav-links li button:hover {
+    background: var(--surface);
+    color: var(--primary);
+    transform: translateX(5px);
+  }
+}

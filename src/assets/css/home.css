@@ -1,0 +1,136 @@
+#main-home {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+  min-height: calc(100dvh - 120px);
+  padding: 4rem 8%;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+}
+
+#info-card {
+  max-width: 550px;
+}
+
+#info-card h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.1;
+  position: relative;
+  color: var(--text);
+}
+
+#info-card h1 span {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-left: 6px;
+
+  border-radius: 50%;
+  background: var(--text);
+  opacity: 0.3;
+
+  animation: pulse 1.4s infinite ease-in-out;
+}
+
+#info-card h1 span:nth-child(2) {
+  animation-delay: 0s;
+}
+#info-card h1 span:nth-child(3) {
+  animation-delay: 0.2s;
+}
+#info-card h1 span:nth-child(4) {
+  animation-delay: 0.4s;
+}
+#info-card h1 span:nth-child(5) {
+  animation-delay: 0.6s;
+}
+
+@keyframes pulse {
+  0%,
+  100% {
+    transform: scale(0.6);
+    opacity: 0.2;
+  }
+  50% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+#picture-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#info-card p {
+  font-size: 1.6rem;
+  color: var(--text);
+}
+
+#info-card button {
+  font-size: 2rem;
+  background: var(--primary);
+  padding: 5px 10px;
+  border: none;
+  color: var(--heading);
+  font-weight: bolder;
+  border-radius: 8px;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+#info-card button:hover {
+  background: var(--secondary);
+  transform: scale(1.1);
+}
+
+.id-card {
+  width: 340px;
+  height: 340px;
+
+  border-radius: 24px;
+  overflow: hidden;
+
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.5);
+
+  transform: rotate(2deg);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.id-card:hover {
+  transform: rotate(0deg) scale(1.05);
+  box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6);
+}
+
+.id-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  #main-home {
+    flex-direction: column;
+    text-align: center;
+    padding: 3rem 2rem;
+  }
+
+  #info-card h1 {
+    font-size: 2.5rem;
+  }
+
+  .id-card {
+    width: 260px;
+    height: 260px;
+  }
+}
