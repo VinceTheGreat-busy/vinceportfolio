@@ -8,7 +8,7 @@ function Projects() {
 
     const fetchProj = async () => {
         try {
-            const res = await fetch("/data/project.json");
+            const res = await fetch(`${import.meta.env.BASE_URL}data/about.json`);
             const data = await res.json();
             setProj(data);
         } catch (e) {

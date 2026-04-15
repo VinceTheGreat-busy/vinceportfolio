@@ -7,7 +7,7 @@ function About() {
 
     const fetchAbout = async () => {
         try {
-            const res = await fetch("/data/about.json");
+            const res = await fetch(`${import.meta.env.BASE_URL}data/about.json`);
             const data = await res.json();
             setAbout(data);
         } catch (e) {
