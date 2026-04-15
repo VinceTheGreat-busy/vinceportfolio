@@ -59,7 +59,7 @@ function About() {
                             <div className="stack-grid">
                                 {items.map((item, index) => (
                                     <div key={index} className="stack-card">
-                                        <img src={item.img} alt={item.name} />
+                                        <img src={`${import.meta.env.BASE_URL}${item.img}`} alt={item.name} />
                                         <p>{item.name}</p>
                                         <div className="stars">{renderStars(item.rating)}</div>
                                     </div>
